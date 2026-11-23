@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeafGuard</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>LeafGuard</h1>
+        <p>Rice leaf disease detection</p>
+      </header>
+
+      <main class="card">
+        <form id="uploadForm" class="upload-form">
+          <label for="leafImage">Upload rice leaf image</label>
+          <input id="leafImage" name="file" type="file" accept="image/*" required />
+          <button type="submit">Predict disease</button>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <div id="resultBox" class="result-box hidden">
+          <h2>Prediction Result</h2>
+          <p><strong>Disease:</strong> <span id="predictionName">-</span></p>
+          <p><strong>Confidence:</strong> <span id="predictionConfidence">-</span>%</p>
+          <p><strong>What it is:</strong> <span id="predictionDescription">-</span></p>
+          <p><strong>Solution:</strong> <span id="predictionSolution">-</span></p>
+        </div>
+      </main>
+
+      <div class="nav-links">
+        <a href="/result">Result page</a>
+        <a href="/history">History</a>
+      </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

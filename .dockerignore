@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+dataset/
+notebooks/
+tests/
+.vscode/
+app.log
+.git/

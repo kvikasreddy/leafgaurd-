@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 42, 24, 0.6), rgba(10, 42, 24, 0.52)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80') center 62% / cover no-repeat fixed;
+  color: #17311d;
+}
+
+.container {
+  max-width: 860px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.small {
+  max-width: 560px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 22px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.header h1 {
+  margin-bottom: 8px;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f3f8f0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(14, 54, 29, 0.24);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1d3c2a;
+}
+
+input[type="file"] {
+  border: 1px solid #cfe3d3;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fbf8;
+  color: #1d3c2a;
+}
+
+button,
+.link-btn {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1f8a4c, #15663b);
+  color: white;
+  padding: 12px 18px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 16px rgba(31, 138, 76, 0.28);
+}
+
+button:hover,
+.link-btn:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #187540, #105231);
+}
+
+.status {
+  margin-top: 16px;
+  min-height: 24px;
+  color: #1a5d39;
+  font-weight: 700;
+}
+
+.result-box {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid #dfeee2;
+  color: #1c2f22;
+}
+
+.result-box h2 {
+  margin-top: 0;
+  color: #145735;
+}
+
+.result-box p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #f0fef4;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  border: 1px solid #e3efe5;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #f8fbf9;
+  color: #1f3427;
+}
+
+.history-item strong {
+  color: #145735;
+}
+
+.result-card p {
+  line-height: 1.7;
+}
